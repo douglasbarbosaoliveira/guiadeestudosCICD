@@ -36,7 +36,7 @@ O Git é inteligente, mas não tem um comando nativo para "renomear". Ele rastre
 - **Solução:** Sempre use o comando git mv &lt;nome_antigo&gt; &lt;novo_nome&gt;. Isso informa ao Git que você moveu ou renomeou um arquivo, e ele mantém o histórico completo.
 - **Refatoração de Código:** O Git lida com a refatoração rastreando as alterações linha por linha, o que permite que você veja como a estrutura do código foi mudada sem alterar seu comportamento.
 
-1. **Controle de Configuração e Versionamento Semântico**
+2. **Controle de Configuração e Versionamento Semântico**
 
 As **tags** no Git são como marcadores que você pode anexar a um _commit_ específico, geralmente para marcar um ponto importante na história do projeto, como o lançamento de uma nova versão. O **Versionamento Semântico** é um sistema para definir o número das versões, no formato **x.y.z**:
 
@@ -52,7 +52,7 @@ Exemplo:
 - 1.1.2 → corrige bug sem quebrar nada.
 - 2.0.0 → reestruturação que quebra compatibilidade.
 
-1. **Integração Contínua**
+3. **Integração Contínua**
 
 ### Conceito
 
@@ -68,7 +68,8 @@ Exemplo:
 4. Executa testes automatizados.
 5. Gera relatórios/logs.
 6. Caso falhe → dev precisa corrigir.
-7. **Testes Automatizados e Fluxo de Testes**
+
+4. **Testes Automatizados e Fluxo de Testes**
 
 Os testes automatizados são a espinha dorsal da Integração Contínua. A cada _push_ para o repositório, o sistema de CI executa uma bateria de testes para validar se o novo código quebra a funcionalidade existente.
 
